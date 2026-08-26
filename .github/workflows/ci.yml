@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_DB: unihr_workflows
+          POSTGRES_USER: unihr
+          POSTGRES_PASSWORD: unihr_local_only
+        ports:
+          - 55432:5432
+        options: >-
+          --health-cmd "pg_isready -U unihr -d unihr_workflows"
+          --health-interval 5s
+          --health-timeout 3s
+          --health-retries 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: python -m pip install -e "./backend[dev]"
+      - run: pytest backend/tests -q
+        env:
+          UNIHR_BAILIAN_API_KEY: test-key
+          UNIHR_WORKFLOW_POSTGRES_DSN: postgresql://unihr:unihr_local_only@127.0.0.1:55432/unihr_workflows?sslmode=disable
+          UNIHR_QUALITY_POSTGRES_DSN: postgresql://unihr:unihr_local_only@127.0.0.1:55432/unihr_workflows?sslmode=disable
+          UNIHR_EXCEL_AUTOMATION_ENABLED: "false"
+          UNIHR_WORD_AUTOMATION_ENABLED: "false"
+
+  frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - working-directory: frontend
+        run: npm ci
+      - working-directory: frontend
+        run: npm run build
+

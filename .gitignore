@@ -1,0 +1,45 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Python
+backend/.venv/
+backend/**/__pycache__/
+backend/**/*.py[cod]
+backend/.pytest_cache/
+backend/.coverage
+backend/htmlcov/
+backend/*.egg-info/
+
+# Node / Vite
+frontend/node_modules/
+frontend/dist/
+frontend/*.tsbuildinfo
+frontend/vite.config.js
+frontend/vite.config.d.ts
+
+# Runtime state and user-owned material
+backend/data/*
+!backend/data/.gitkeep
+!backend/data/README.md
+/knowledge/
+/uploads/
+/artifacts/
+/previews/
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# Local automation and browser state
+.playwright-cli/
+output/
+outputs/
+.runtime-logs/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
