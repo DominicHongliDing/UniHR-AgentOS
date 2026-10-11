@@ -6,7 +6,7 @@
 
 政策回答有出处，复杂任务能接着做，Word 和 Excel 可以直接交付。
 
-[了解产品](#这个项目从哪里来) · [查看典型任务](#四类典型任务) · [本地启动](#本地启动) · [系统设计](#系统如何工作)
+[作者 AI 产品经理作品集](docs/AI-PM-PORTFOLIO.md) · [在线体验](https://dominicspace.com/#unihr) · [Clinical 评测案例](https://dominicspace-agent-showcase.peterzhukejie2020.chatgpt.site/apps/evaluation/index.html?view=story) · [了解产品](#这个项目从哪里来) · [查看典型任务](#四类典型任务) · [本地启动](#本地启动) · [系统设计](#系统如何工作)
 
 </div>
 
