@@ -23,3 +23,7 @@ UniHR 是可下载运行的开源 Demo；Clinical 提供产品介绍与在线工
 [人事任务示例](https://dominicspace-agent-showcase.peterzhukejie2020.chatgpt.site/apps/unihr/index.html) · [病例讨论示例](https://dominicspace-agent-showcase.peterzhukejie2020.chatgpt.site/apps/clinical/index.html) · [一次实际评测](https://dominicspace-agent-showcase.peterzhukejie2020.chatgpt.site/apps/evaluation/index.html?space=history&view=story)
 
 浏览示例和界面无需填写 API Key，实际运行 AI 任务时再连接自己的模型账户。UniHR 与 Clinical 示例用于说明处理思路；EVO 案例保留虚构病例的实际测试记录。
+
+## 进一步了解 UniHR 的设计
+
+[培训跟进核心案例](cases/training-follow-up.md) · [产品设计与验证计划](product-design.md) · [完整 PRD 立项评审稿](PRD.md)

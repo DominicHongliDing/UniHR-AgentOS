@@ -4,7 +4,7 @@
 
 UniHR 是面向高校人事和行政经办人员的 AI 工作台。你可以用日常语言交代任务，让它查政策、整理材料，生成可以继续编辑的 Word 和 Excel 文件。
 
-[看人事任务示例](https://dominicspace-agent-showcase.peterzhukejie2020.chatgpt.site/apps/unihr/index.html) · [典型任务](#经办人可以用它做什么) · [设计取舍](#几个关键的产品选择) · [本地启动](#本地启动) · [技术细节](docs/RUNTIME-DETAILS.md) · [关于作者](https://github.com/DominicHongliDing)
+[看人事任务示例](https://dominicspace-agent-showcase.peterzhukejie2020.chatgpt.site/apps/unihr/index.html) · [核心案例](docs/cases/training-follow-up.md) · [产品设计](docs/product-design.md) · [完整 PRD](docs/PRD.md) · [典型任务](#经办人可以用它做什么) · [设计取舍](#几个关键的产品选择) · [本地启动](#本地启动) · [技术细节](docs/RUNTIME-DETAILS.md) · [关于作者](https://github.com/DominicHongliDing)
 
 ## 第一次看，建议这样体验
 
@@ -28,6 +28,12 @@ UniHR 是面向高校人事和行政经办人员的 AI 工作台。你可以用�
 | 整理岗位与候选人材料 | 按岗位要求比较材料，标出原文依据和待核实项 | 比较结果与 Excel 报告，供招聘人员复核 |
 | 制作通知、会议材料或业务表格 | 确认内容与格式，调用文件工具生成并检查 | 可以编辑的 Word / Excel 及检查结果 |
 | 完成有多个步骤的任务 | 安排处理顺序，保存中间结果，提示需要确认的地方 | 可以查看进度、继续修改的任务记录 |
+
+## 从一个完整任务看设计
+
+[培训完成情况表与提醒通知](docs/cases/training-follow-up.md)从一句要求展开：先确认统计口径，再处理重复与空白，最后核对表格和通知是否一致。案例附有虚构名单、可复算的预期结果，以及文件失败和继续修改时的要求。
+
+我把“能生成内容”进一步拆成“怎样才算交付可用”。想了解范围与取舍，可以看[产品设计](docs/product-design.md)；完整输入输出、异常和验收要求保留在 [14 节 PRD 立项评审稿](docs/PRD.md)中。PRD 包含待验证的设计目标，当前进展以本页和案例记录为准。
 
 ## 本地产品界面
 
