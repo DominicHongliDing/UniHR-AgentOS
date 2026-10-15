@@ -1,10 +1,18 @@
 ![UniHR AgentOS：把琐碎的人事任务做成可交付的工作](assets/cover.svg)
 
-# UniHR AgentOS
+# UniHR · 人事工作台
 
 UniHR 是面向高校人事和行政经办人员的 AI 工作台。你可以用日常语言交代任务，让它查政策、整理材料，生成可以继续编辑的 Word 和 Excel 文件。
 
-[看交互展示](https://dominicspace.com/#unihr) · [典型任务](#经办人可以用它做什么) · [设计取舍](#几个关键的产品选择) · [本地启动](#本地启动) · [技术细节](docs/RUNTIME-DETAILS.md) · [关于作者](https://github.com/DominicHongliDing)
+[看人事任务示例](https://dominicspace-agent-showcase.peterzhukejie2020.chatgpt.site/apps/unihr/index.html) · [典型任务](#经办人可以用它做什么) · [设计取舍](#几个关键的产品选择) · [本地启动](#本地启动) · [技术细节](docs/RUNTIME-DETAILS.md) · [关于作者](https://github.com/DominicHongliDing)
+
+## 第一次看，建议这样体验
+
+1. [先看三步示例](https://dominicspace-agent-showcase.peterzhukejie2020.chatgpt.site/apps/unihr/index.html#example)：以培训完成情况表为例，了解怎样确认要求、整理资料、核对文件。
+2. [浏览工作台](https://dominicspace-agent-showcase.peterzhukejie2020.chatgpt.site/apps/unihr/index.html?mode=browse)：无需填写 API Key，可以先看任务入口、材料和文件放在哪里。
+3. 想实际生成回答或文件时，再点击「连接模型」，使用自己的模型账户。
+
+示例页展示处理思路，未调用模型生成结果。在线访客工作台与下面的本地版本分别运行，本地安装与模型配置见[本地启动](#本地启动)。
 
 ## 我为什么做这个项目
 
@@ -21,18 +29,18 @@ UniHR 是面向高校人事和行政经办人员的 AI 工作台。你可以用�
 | 制作通知、会议材料或业务表格 | 确认内容与格式，调用文件工具生成并检查 | 可以编辑的 Word / Excel 及检查结果 |
 | 完成有多个步骤的任务 | 安排处理顺序，保存中间结果，提示需要确认的地方 | 可以查看进度、继续修改的任务记录 |
 
-## 产品界面
+## 本地产品界面
 
 ![UniHR 主工作台：对话入口与任务工作区](docs/images/unihr-home.png)
 
 在对话区说明要求、上传附件，在工作区查看文件、出处和处理进度。想改内容时，可以接着说，不必另开一次任务。
 
 <details>
-<summary>查看流程复用：Skill 中心</summary>
+<summary>查看常用任务如何复用（本地界面称为 Skill 中心）</summary>
 
 ![UniHR Skill 中心](docs/images/skills-center.png)
 
-常做的工作可以保存为 Skill，把步骤、模板和注意事项一起记下来。试跑并确认后，下次遇到同类任务就能沿用。
+常做的工作可以保存为可复用的任务流程（Skill），把步骤、模板和注意事项一起记下来。试跑并确认后，下次遇到同类任务就能沿用。
 
 </details>
 
@@ -55,7 +63,7 @@ flowchart LR
 
 简单的任务可以直接处理；涉及多份文件或多种工具时，先列出步骤，并保存每一步的结果。这样，某个环节出了问题可以回去修改，经办人也能知道还有哪些事情没完成。
 
-可以复用的方法、模板和注意事项保存在 Skill 中，每次任务的具体材料单独管理。AI 帮忙整理和比较材料、处理文件；是否录用、如何定薪，以及是否正式发送，仍由经办人员确认。
+可以复用的方法、模板和注意事项保存在常用任务流程中，每次任务的具体材料单独管理。AI 帮忙整理和比较材料、处理文件；是否录用、如何定薪，以及是否正式发送，仍由经办人员确认。
 
 ## AI 技术在产品里起什么作用
 
