@@ -1,29 +1,25 @@
 # 丁泓力 · 产品与项目
 
-我是丁泓力。本科就读于西交利物浦大学，专业是生物信息学，后来在康奈尔大学完成了医疗信息学与人工智能硕士学业。目前在浙江大学“一带一路”国际医学院从事人事与国际交流工作，也参与用 AI 改进业务流程。此前曾在卡罗莱纳精神病研究所实习，参与 VedAI 的需求研究、原型验证和上线工作。
+我目前在浙江大学“一带一路”国际医学院从事人事与国际交流工作，也参与用 AI 改进业务流程。本科在西交利物浦大学学习生物信息学，硕士在康奈尔大学学习医疗信息学与人工智能，正在寻找 AI 产品经理与 FDE 方向的机会。
 
-目前正在寻找 AI 产品经理与 FDE 方向的机会。
+[个人主页](https://github.com/DominicHongliDing) · [作品站](https://dominicspace-agent-showcase.peterzhukejie2020.chatgpt.site/)
 
-下面几个项目都和我的经历有关：人事工作中反复整理材料，精神科实习中接触到医生的使用反馈，做完原型后又需要判断修改有没有效果。我从这些问题出发，和使用者讨论需求，再借助 AI 编程工具做出原型。平时也会试新模型、读技术文档，把学到的方法用到项目里。
+## 三个产品
 
-[完整个人介绍](https://github.com/DominicHongliDing) · [作品站](https://dominicspace-agent-showcase.peterzhukejie2020.chatgpt.site/)
+| 产品 | 使用者与用途 | 入口 |
+| --- | --- | --- |
+| UniHR · 人事工作台 | 高校人事与行政经办人查政策、整理材料、制作可编辑文件 | [产品与源码](../README.md) · [在线示例](https://dominicspace-agent-showcase.peterzhukejie2020.chatgpt.site/apps/unihr/index.html) |
+| Clinical Agent · 病例工作台 | 医生整理病例、持续讨论、查阅并核对医学资料 | [产品与设计](https://github.com/DominicHongliDing/Clinical-Agent) · [在线示例](https://dominicspace-agent-showcase.peterzhukejie2020.chatgpt.site/apps/clinical/index.html) |
+| Agent EVO · 评测与改进工作台 | 产品、业务和开发团队审核回答、保存问题、比较版本与复测 | [产品与源码](https://github.com/DominicHongliDing/Agent-EVO) · [在线案例](https://dominicspace-agent-showcase.peterzhukejie2020.chatgpt.site/apps/evaluation/index.html?space=history&view=story) |
 
-## 我在做的三个项目
+UniHR 和 EVO 已公开可本地运行的源码，Clinical 当前公开产品文档与在线演示。在线示例与历史记录无需 API Key，实际运行 AI 任务时再连接个人模型账户。
 
-| 项目 | 为什么做 | AI 在其中的作用 | 继续阅读 |
-|---|---|---|---|
-| UniHR AgentOS | 查完政策，还要接着整理材料、制作文件 | 理解任务、检索政策、组织步骤，调用工具生成可编辑文件 | [产品与源码](../README.md) |
-| Clinical Agent | 医生需要持续补充病例信息、查阅资料，AI 却可能遗漏前文 | 保留患者信息、检索医学资料，检查结论是否有足够依据 | [产品设计](https://github.com/DominicHongliDing/Clinical-Agent) |
-| Agent EVO | 修改提示词或模型后，需要知道原来的问题是否修好 | 辅助准备测试题、评审回答、整理问题与版本报告 | [设计思路](https://github.com/DominicHongliDing/DominicHongliDing/blob/main/docs/agent-evo.md) |
+## 需求来源与参与
 
-UniHR 是可下载运行的开源 Demo；Clinical 提供产品介绍与在线工作台；EVO 已提供[源码与运行说明](https://github.com/DominicHongliDing/Agent-EVO)，也可以先看公开案例。VedAI 是实习期间参与的团队产品，Clinical Agent 是之后的个人项目。
+UniHR 来自我的人事与行政工作；Clinical 来自在卡罗莱纳精神病研究所实习、参与 VedAI 时接触到的使用反馈；EVO 来自迭代前两个项目时比较修改效果的需要。
 
-## 先看示例，再进入工作台
+实习期间，我与项目负责人、精神科医生及前后端工程师沟通，参与 VedAI 的需求研究、原型验证与上线。Clinical Agent 是之后的个人项目。在个人项目中，我负责需求、范围、交互和验收要求，并借助 AI 编程工具实现原型。
 
-[人事任务示例](https://dominicspace-agent-showcase.peterzhukejie2020.chatgpt.site/apps/unihr/index.html) · [病例讨论示例](https://dominicspace-agent-showcase.peterzhukejie2020.chatgpt.site/apps/clinical/index.html) · [一次实际评测](https://dominicspace-agent-showcase.peterzhukejie2020.chatgpt.site/apps/evaluation/index.html?space=history&view=story)
+## UniHR 设计材料
 
-浏览示例和界面无需填写 API Key，实际运行 AI 任务时再连接自己的模型账户。UniHR 与 Clinical 示例用于说明处理思路；EVO 案例保留虚构病例的实际测试记录。
-
-## 进一步了解 UniHR 的设计
-
-[培训跟进核心案例](cases/training-follow-up.md) · [产品设计与验证计划](product-design.md) · [完整 PRD 立项评审稿](PRD.md)
+[培训完成情况统计与提醒通知](cases/training-follow-up.md) · [产品设计](product-design.md) · [完整 PRD 立项评审稿](PRD.md)
